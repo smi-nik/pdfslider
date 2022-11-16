@@ -1,5 +1,5 @@
 /**
- * @author alexwebgr
+ * @author smi-nik
  * @title pdfSlider
  * @desc simple slider originally created for pdf files but can be used for any content
  */
@@ -13,8 +13,8 @@
         {
             container : "#carousel",
             item : "object",
-            itemWidth : $(window).width() - 40,
-            itemHeight : $(window).height() - 60,
+            itemWidth : 600,
+            itemHeight : 320,
             speed : 1000,
             activeSlideIndex : 0,
 
@@ -100,7 +100,8 @@
                     .addClass(options._rootContainer)
                     .css({
                         height : options.itemHeight,
-                        width : options.itemWidth
+                        width : options.itemWidth,
+                        position: 'relative'
                     })
                 ;
                 options._thumbsContainer = $("<div />").addClass(options._thumbsContainer);
@@ -132,8 +133,8 @@
 
             _createControls : function()
             {
-                var prev = $("<div />").addClass(options._navButton).addClass(options._prevButton);
-                var next = $("<div />").addClass(options._navButton).addClass(options._nextButton);
+                var prev = $("<div> < </div>").addClass(options._navButton).addClass(options._prevButton);
+                var next = $("<div> > </div>").addClass(options._navButton).addClass(options._nextButton);
                 var close = $("<div />").addClass(options._navButton).addClass(options._closeButton);
                 var hideControls = $("<div />").addClass(options._navButton).addClass(options._hideControlsButton);
                 var anchor = $("<a href='#'></a>").text("hideControls");
