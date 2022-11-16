@@ -1,6 +1,8 @@
 .pdfSlider_rootContainer
 {
     position : relative;
+    width: 600px;
+    height: 320px;
 }
 
 .pdfSlider_rootContainer .pdfSlider_button
@@ -54,6 +56,8 @@
     top : 0;
     left : 0;
     overflow: hidden;
+    width: 600px;
+    height: 320px;
 }
 
 .pdfSlider_rootContainer .pdfSlider_slideWrapper object
